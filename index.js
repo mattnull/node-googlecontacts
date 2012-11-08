@@ -29,7 +29,6 @@ GoogleContacts.prototype.attachEvents = function(){
       url : 'http://google.com' + self.url, 
       headers: {'Authorization': 'GoogleLogin auth=' + self.auth.getAuthId()}
     }, function(err, response, body){
-      console.log(body)
       self.emit('contactsReceived', JSON.parse(body));
     });
   });
