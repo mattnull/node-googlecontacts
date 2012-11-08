@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Matt Null",
+    "email": "hello@mattnull.com",
+    "url": "http://github.com/mattnull"
+  },
+  "name": "googlecontacts",
+  "description": "Node.js client for Google Contacts",
+  "version": "0.0.2",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattnull/node-googlecontacts"
+  },
+  "main": "./index",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "request": "2.10.0",
+    "googleclientlogin" : "0.2.4"
+  }
+}
