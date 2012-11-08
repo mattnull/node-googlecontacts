@@ -9,8 +9,8 @@ Usage
 =====
 ```javascript
   var credentials = {
-        email: 'me@mysite.com'
-        password: 'mypassword'
+    email: 'me@mysite.com',
+    password: 'mypassword'
   };
 
     var contacts = new googleContacts(credentials)
