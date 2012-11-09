@@ -34,20 +34,7 @@ GoogleContacts.prototype.attachEvents = function(){
   });
 
   this.auth.on(GoogleClientLogin.events.error, function(e) {
-    switch(e.message) {
-      case GoogleClientLogin.errors.loginFailed:
-        if (this.isCaptchaRequired()) {
-          requestCaptchaFromUser(this.getCaptchaUrl(), this.getCaptchaToken());
-        } else {
-          requestLoginDetailsAgain();
-        }
-        break;
-      case GoogleClientLogin.errors.tokenMissing:
-      case GoogleClientLogin.errors.captchaMissing:
-        throw new Error('You must pass the both captcha token and the captcha')
-        break;
-    }
-    throw new Error('Unknown error');
+    throw new Error('Login error');
   });
 };
 

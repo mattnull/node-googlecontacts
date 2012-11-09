@@ -6,7 +6,7 @@
   },
   "name": "googlecontacts",
   "description": "Node.js client for Google Contacts",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "homepage": "",
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "request": "2.10.0",
-    "googleclientlogin" : "0.2.4"
+    "googleclientlogin" : "0.2.4",
+    "events" : "*",
+    "util" : "*"
   }
 }
